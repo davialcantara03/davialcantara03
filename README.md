@@ -1,16 +1,19 @@
-# Olá, eu sou o Davi Alcântara 👋
+# Olá, eu sou o Davi Aguiar 👋
 
-Analista de Dados Júnior com experiência prática em SQL, Python e Power BI aplicados a dados reais. Opero há quase 5 anos uma base própria de mídia digital (~25 mil seguidores, +110 milhões de impressões/ano), da qual construí um pipeline analítico completo — da extração à visualização.
+Analista de Dados Júnior com foco em SQL, Power BI e modelagem de dados. Construí um data warehouse com dbt e Databricks, com testes de qualidade e painel de vendas, e há quase 5 anos opero uma base própria de mídia digital (~25 mil seguidores, +110 milhões de impressões/ano), da qual extraio, modelo e analiso métricas diárias.
 
-Cursando **Sistemas de Informação** pela Uninter | Aberto a vagas **100% remotas**
+Concluí a **Formação em Engenharia de Analytics** (Indicium AI Academy) e a **Certificação Analytics Engineer** (Indicium AI). Cursando **Sistemas de Informação** pela Universidade Cruzeiro do Sul.
 
 ---
 
 ## 🛠️ Stack
 
+![SQL](https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
@@ -18,24 +21,24 @@ Cursando **Sistemas de Informação** pela Uninter | Aberto a vagas **100% remot
 
 ## 📁 Projetos
 
-### 🔵 [Projeto 1 — Impacto dos Jogos na Performance da Página](https://github.com/davialcantara03/projeto_1_cec_informs)
-Análise do efeito de dias de jogo, resultados (vitória/empate/derrota) e janelas de transferência sobre as métricas da página. Uso de **SQL com window functions** (LAG/LEAD, RANK) sobre 365 dias de dados reais.
+### 🔵 [Adventure Works — Data Warehouse e Painel de Vendas](https://github.com/davialcantara03/adventure_works_dw)
+Data warehouse em modelo estrela, com fato no grão de item de pedido e dimensões de produto, cliente, local, data, vendedor, cartão e motivo de venda. Pipeline em camadas (staging, intermediate e marts) com **dbt**, rodando sobre **Databricks**, com testes automatizados e painel de três páginas em **Power BI**.
 
-> 📌 Descoberta principal: o engajamento no dia seguinte ao jogo é **176% maior** que no próprio dia — efeito ressaca confirmado com dados.
-
----
-
-### 🔵 [Projeto 2 — Performance Editorial e Sazonalidade da Conversão](https://github.com/davialcantara03/projeto_2_cec_informs)
-Investigação da eficiência editorial por dia da semana, qualidade do alcance por quartil e evolução mensal da taxa de conversão. **SQL + Power BI** com medidas DAX validadas contra PostgreSQL.
-
-> 📌 Descoberta principal: o quartil de maior alcance tem a **menor taxa de conversão** — alcance vazio identificado e documentado.
+> 📌 Destaque: teste automatizado do total de vendas de 2011 contra o valor de referência do projeto, garantindo que o número do painel bate com a fonte.
 
 ---
 
-### 🔵 [Projeto 3 — Anatomia de um Dia Viral: Eventos Extremos e Efeito de Arrasto](https://github.com/davialcantara03/projeto_3_cec_informs)
-Isolamento estatístico de "Dias Monstro" via critério **μ + 2σ**, análise de sustentabilidade do crescimento e spillover effect em janela de ±3 dias. **Python/Pandas + Power BI**.
+### 🔵 [CEC Informs — Análise de Performance e Engajamento](https://github.com/davialcantara03/cec-informs-analytics)
+Três estudos de caso sobre a operação de uma página de mídia digital, cruzando 365 dias de métricas diárias com o calendário de jogos do Cruzeiro. Uso de **SQL com window functions**, **Python/Pandas** e **Power BI**.
 
-> 📌 Descoberta principal: os 3 dias após um pico viral mantêm tráfego **2x acima do normal** — janela ideal para ação estratégica.
+- **Estudo 1 — Impacto dos jogos:** efeito ressaca de 176% no engajamento do dia seguinte ao jogo, com 305% após vitórias.
+- **Estudo 2 — Eficiência editorial:** o quartil de maior alcance tem a menor taxa de conversão, o que indica "alcance vazio".
+- **Estudo 3 — Dias virais:** critério μ + 2σ para isolar picos de alcance, com efeito de arrasto de cerca de duas vezes o tráfego normal nos dias seguintes.
+
+---
+
+### 🔵 [Banvic — Pipeline dbt](https://github.com/davialcantara03/banvic-dbt)
+Pipeline em camadas sobre a base de ERP de um banco fictício, com dimensões de clientes, agências, colaboradores, contas e datas, e tabela fato de transações. Testes de unicidade, not null e relacionamento, documentados em YAML.
 
 ---
 
